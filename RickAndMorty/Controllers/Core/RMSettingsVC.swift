@@ -12,6 +12,7 @@ final class RMSettingsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .systemBackground
         navigationItem.title = "Settings"
     }
 }
