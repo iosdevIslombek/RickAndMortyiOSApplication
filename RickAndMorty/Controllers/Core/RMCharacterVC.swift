@@ -21,8 +21,12 @@ final class RMCharacterVC: UIViewController {
                 URLQueryItem(name: "name", value: "rick"),
                 URLQueryItem(name: "status", value: "alive")
             ]
-        print(request.url)
         )
+        print(request.url)
+        
+        RMService.shared.execute(request, expecting: RMCharacter.self) { result in
+            
+        }
     }
 
 }
